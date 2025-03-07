@@ -1,17 +1,10 @@
-# 2. Escreva um programa que leia um número inteiro positivo e determine se ele é um
-# palíndromo (ou seja, se lido de trás para frente continua igual).
-# Leitura do número inteiro positivo
+# 3. Escreva um programa que leia um número inteiro e conte quantos dígitos ele tem.
 
+num = input("Digite um número: ")
+contador = 0
 
-palavra = input("Digite uma palavra: ")
-palavraInvertida = palavra[::-1]
+while contador < len(num): # Adiciona 1 ao contador de dígitos até que o contador se iguale a quantidade de caracteres.
+    contador += 1
 
-    # Compara a palavra original com sua versão invertida.
-if palavra == palavraInvertida:
-    # Se forem iguais, retorna a string "A palavra é um palíndromo.".
-    print("A palavra é um palíndromo.")
-else:
-    # Se não forem iguais, retorna a string "A palavra não é um palíndromo.".
-    print("A palavra não é um palíndromo.")
-
+print(f"O número {num} tem {contador} dígitos.")
 
