@@ -1,8 +1,15 @@
 # 1. Faça um programa que leia 5 números e informe o maior número.
 
-lista = []
+# Inicializa a variável para armazenar o maior número
+maior_numero = None
+
+# Lê 5 números e verifica qual é o maior
 for i in range(5):
     num = int(input("Digite um número: "))
-    lista.append(num)  # Adiciona o número digitado à lista
-x = max(lista)  # Encontra o maior número na lista
-print(f"O maior número entre os numeros {lista} é: {x}")  # Imprime o maior número encontrado
+    
+    # Se for o primeiro número, define como o maior
+    if maior_numero is None or num > maior_numero:
+        maior_numero = num
+
+# Imprime o maior número encontrado
+print(f"O maior número digitado é: {maior_numero}")
